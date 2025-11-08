@@ -41,5 +41,8 @@ test m101_p3_comparison() {
 
   trace @"not_equal:  TRUE"
   let not_equal = 3 != 2
-  greater_than && less_than && greater_than_or_equal && less_than_or_equal && equal && not_equal
+
+  // ? used to "print/log" the value of boolean expressions during test runtime.
+  //  ( ? ) operater can be used in place of trace messages. Just adding a "?" after a variable will log its value during test execution.
+  greater_than? && less_than? && greater_than_or_equal? && less_than_or_equal? && equal? && not_equal?
 }
